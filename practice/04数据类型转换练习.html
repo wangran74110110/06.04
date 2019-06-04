@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ====> 转换为 string 类型 tostring()  或者 +
+
+        // null 转换成 string  null
+        // undefined 转换成 String  unfefind
+        // boolean 转换成 string
+        // number 转化成 string
+        console.log('hello' + null);
+        console.log('hello' + undefined);
+        console.log(true.toString()); //true 字符串
+        console.log(1 + '不凡学院');  //1不凡
+
+
+        // =====> boolean Boolean()
+        //         数字 0
+        // NaN
+        // " ", 空字符串
+        // false
+        // undefined
+        // null
+        console.log(Boolean(NaN));
+        console.log(Boolean(''));
+        console.log(Boolean(undefined));
+        console.log(Boolean(null));
+        console.log(Boolean(0));
+        console.log(Boolean({})); //true
+
+        // =====>number类型 Number()  parseInt()  parseFloat()
+        //  数字类型的字符串 可以转换成 Number类型
+        console.log(Number('-123.123'));
+        console.log(Number('  123.12'));
+        console.log(Number('')); // 0
+        console.log(Number(true)); //1
+        console.log(Number(false)); //0
+
+        //parseInt() 转换成整数 只取整数部分
+        console.log(parseInt(123.9));
+        console.log(parseInt('   125a5'));
+        console.log(parseInt('')); //NaN
+
+        // parseFloat 转换成小数
+        console.log(parseFloat('123.98.34')); //123.98
+        console.log(parseFloat('   123.98a.45')); //123.98
+    </script>
+</body>
+</html>
